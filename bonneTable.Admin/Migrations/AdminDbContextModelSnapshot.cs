@@ -24,7 +24,7 @@ namespace bonneTable.Admin.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("HashedPassword");
+                    b.Property<string>("Password");
 
                     b.Property<string>("Username");
 

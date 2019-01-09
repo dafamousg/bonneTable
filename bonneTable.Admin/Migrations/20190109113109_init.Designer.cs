@@ -10,7 +10,7 @@ using bonneTable.Admin;
 namespace bonneTable.Admin.Migrations
 {
     [DbContext(typeof(AdminDbContext))]
-    [Migration("20190109090115_init")]
+    [Migration("20190109113109_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,7 +26,7 @@ namespace bonneTable.Admin.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("HashedPassword");
+                    b.Property<string>("Password");
 
                     b.Property<string>("Username");
 

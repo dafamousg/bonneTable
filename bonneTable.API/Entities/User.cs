@@ -1,8 +1,8 @@
-﻿using bonneTable.Models;
+﻿using bonneTable.Admin.Entities;
 
 namespace bonneTable.API.Entities
 {
-    public class User : RestaurantAdmin
+    public class User : AdminUser
     {
         public string Token { get; set; }
     }

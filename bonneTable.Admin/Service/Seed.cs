@@ -19,7 +19,7 @@ namespace bonneTable.Admin.Service
 
             if (!list.Any())
             {
-                var admin1 = new AdminUser { Username = "test", HashedPassword = "test" };
+                var admin1 = new AdminUser { Username = "test", Password = "test" };
                 await _context.AdminUsers.AddAsync(admin1);
                 await _context.SaveChangesAsync();
             }

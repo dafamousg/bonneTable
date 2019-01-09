@@ -30,7 +30,7 @@ namespace bonneTable.API.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate([FromBody]User userParameters)
         {
-            var user = _userService.Authenticate(userParameters.UserName, userParameters.Password);
+            var user = _userService.Authenticate(userParameters.Username, userParameters.Password);
 
             if (user == null)
                 return BadRequest(new { message = "Username or password is incorrect" });
