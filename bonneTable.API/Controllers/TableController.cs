@@ -33,7 +33,7 @@ namespace bonneTable.API.Controllers
             var user = _userService.Authenticate(userParameters.Username, userParameters.Password);
 
             if (user == null)
-                return BadRequest(new { message = "Username or password is incorrect" });
+                return BadRequest(new { message = "Username and/or password is incorrect" });
 
             return Ok(user);
         }

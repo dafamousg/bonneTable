@@ -13,7 +13,8 @@ namespace bonneTable.Admin.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     Username = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: true)
+                    Salt = table.Column<string>(nullable: true),
+                    HashedPassword = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

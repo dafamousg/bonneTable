@@ -9,6 +9,6 @@ namespace bonneTable.Admin
         public AdminDbContext(DbContextOptions<AdminDbContext> options)
             : base(options) { }
 
-        public DbSet<AdminUser> AdminUsers { get; set; }
+        public DbSet<DbAdminUser> AdminUsers { get; set; }
     }
 }

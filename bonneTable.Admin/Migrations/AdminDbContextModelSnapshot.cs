@@ -19,12 +19,14 @@ namespace bonneTable.Admin.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("bonneTable.Admin.Entities.AdminUser", b =>
+            modelBuilder.Entity("bonneTable.Admin.Entities.DbAdminUser", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Password");
+                    b.Property<string>("HashedPassword");
+
+                    b.Property<string>("Salt");
 
                     b.Property<string>("Username");
 
