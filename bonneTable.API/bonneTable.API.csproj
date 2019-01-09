@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\bonneTable.Admin\bonneTable.Admin.csproj" />
     <ProjectReference Include="..\bonneTable.Services\bonneTable.Services.csproj" />
   </ItemGroup>
 

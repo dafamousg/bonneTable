@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bonneTable.Services", "bonn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bonneTable.Tests", "bonneTable.Tests\bonneTable.Tests.csproj", "{89A96B3F-C7B8-4C5F-8DF1-FB9B3D0ABD3C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bonneTable.Data", "bonneTable.Data\bonneTable.Data.csproj", "{FF89A80E-2C15-4CA6-B144-BD40A0E2DB38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bonneTable.Data", "bonneTable.Data\bonneTable.Data.csproj", "{FF89A80E-2C15-4CA6-B144-BD40A0E2DB38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bonneTable.Admin", "bonneTable.Admin\bonneTable.Admin.csproj", "{00A70C6A-619B-4793-A83C-3D962E2AE11B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{FF89A80E-2C15-4CA6-B144-BD40A0E2DB38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF89A80E-2C15-4CA6-B144-BD40A0E2DB38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF89A80E-2C15-4CA6-B144-BD40A0E2DB38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00A70C6A-619B-4793-A83C-3D962E2AE11B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00A70C6A-619B-4793-A83C-3D962E2AE11B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00A70C6A-619B-4793-A83C-3D962E2AE11B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00A70C6A-619B-4793-A83C-3D962E2AE11B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

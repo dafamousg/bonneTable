@@ -1,8 +1,6 @@
-﻿using bonneTable.Models;
-using bonneTable.Models.RequestModels;
+﻿using bonneTable.Models.RequestModels;
 using bonneTable.Models.ViewModels;
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace bonneTable.Services.Interfaces
