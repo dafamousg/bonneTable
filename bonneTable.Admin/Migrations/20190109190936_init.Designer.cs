@@ -10,7 +10,7 @@ using bonneTable.Admin;
 namespace bonneTable.Admin.Migrations
 {
     [DbContext(typeof(AdminDbContext))]
-    [Migration("20190109154915_init")]
+    [Migration("20190109190936_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,10 @@ namespace bonneTable.Admin.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AdminUsers");
+
+                    b.HasData(
+                        new { Id = new Guid("f06899ea-eae4-45fe-8930-6a0cb983673f"), HashedPassword = "O8OAc+g+w7l/V0aNCdEnYx+3zE3AXqcJMTCB0ylLhhY=", Salt = "eKM5gUWEhws0jPdCxdjrJw==", Username = "test" }
+                    );
                 });
 #pragma warning restore 612, 618
         }

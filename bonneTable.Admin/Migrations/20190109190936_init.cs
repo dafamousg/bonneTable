@@ -20,6 +20,11 @@ namespace bonneTable.Admin.Migrations
                 {
                     table.PrimaryKey("PK_AdminUsers", x => x.Id);
                 });
+
+            migrationBuilder.InsertData(
+                table: "AdminUsers",
+                columns: new[] { "Id", "HashedPassword", "Salt", "Username" },
+                values: new object[] { new Guid("f06899ea-eae4-45fe-8930-6a0cb983673f"), "O8OAc+g+w7l/V0aNCdEnYx+3zE3AXqcJMTCB0ylLhhY=", "eKM5gUWEhws0jPdCxdjrJw==", "test" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
