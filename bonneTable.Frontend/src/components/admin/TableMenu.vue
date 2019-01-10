@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Ｔａｂｌｅ　Ｍｅｎｕ</h1>
+    <h1>Ｔａｂｌｅ Ｍｅｎｕ</h1>
     <div>
       <b-nav fill tabs>
         <b-nav-item @click="menuAdd()">Add</b-nav-item>
@@ -37,13 +37,13 @@ export default {
     },
     notLoggedIn() {
       if (localStorage.loggedIn == "false") {
-        console.log("not logged in run")
+        console.log("not logged in run");
         this.$router.push({ path: "/LogIn" });
       }
     }
   },
-  beforeCreate(){
-    this.notLoggedIn()
+  beforeCreate() {
+    this.notLoggedIn();
   }
 };
 </script>

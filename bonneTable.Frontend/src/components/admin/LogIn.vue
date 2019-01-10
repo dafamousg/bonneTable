@@ -49,6 +49,7 @@
 
 <script>
 import { getToken } from "@/api/Authentication.js";
+import { decode } from "@/Helper/JWT.js";
 import glitchImage from "../admin/glitchImage";
 
 export default {
@@ -68,6 +69,7 @@ export default {
         .then(response => {
           console.log(response);
           localStorage.token = response.token;
+
           localStorage.loggedIn = true;
           console.log(localStorage.loggedIn);
           this.$router.push({ path: "/admin" });

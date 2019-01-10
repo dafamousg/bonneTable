@@ -15,7 +15,10 @@
         </div>
       </div>
     </div>
-    <Footer/>
+    <div class="col-8 mx-auto">
+      <token-timer/>
+      <Footer/>
+    </div>
   </div>
 </template>
 
@@ -28,12 +31,14 @@ import { formatTime } from "@/api/TimeFormatter";
 import TableMenu from "../admin/TableMenu";
 import BookingMenu from "../admin/BookingMenu";
 import LogIn from "../admin/LogIn";
+import TokenTimer from "../admin/TokenTimer";
 
 export default {
   components: {
     LogIn,
     glitchImage,
-    Footer
+    Footer,
+    TokenTimer
   },
   name: "Admin",
   data() {
@@ -41,7 +46,7 @@ export default {
       displayBookingnMenu: true,
       displayTableMenu: false,
       displayLogIn: true,
-      displayLogOut: true,
+      displayLogOut: true
     };
   },
   methods: {
@@ -83,7 +88,7 @@ export default {
 <style >
 @import url("https://fonts.googleapis.com/css?family=Staatliches");
 
-h1{
+h1 {
   /* font-family: 'Times New Roman';
   font-size: 2em; */
 }
